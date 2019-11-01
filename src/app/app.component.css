@@ -1,0 +1,40 @@
+
+.top-bar{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+.top-bar-logo {
+    height: 35px;
+    width: 200px;
+}
+.div-back-app-pc {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99%;
+    width: 99%;
+    position: absolute;
+}
+.div-back-app-mobile {
+    background-color: #f1f1f1;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    height: 96%;
+    width: 98%;
+    position: absolute;
+    margin: 1%;
+}
+.div-app-weahter-pc{
+    display: inline-block;
+    margin: 1%;
+}
+.div-app-weahter-mobile{
+    margin: 1%;
+}

@@ -1,0 +1,54 @@
+<div class="square-weather">
+    <div class="div-city-name">
+        <label class="label-city-name"> {{city.getCompositName()}} </label>
+    </div>
+
+    <hr class="divider-name">
+    
+    <div *ngIf="showLoader && !showError" class="load-content">
+         <img src="assets/loader.svg">
+    </div>
+    
+    <div *ngIf="!showLoader && showError" class="error-try-again">
+        <div class="div-message-error">
+            <label class="label-message-error">Something went wrong</label>
+        </div>
+        <div class="btn-try-again" (click)="newTryCallService()">
+            <label class="label-try-again"> Try Again </label>
+        </div>
+    </div>
+        
+
+    <div *ngIf="!showLoader && !showError" class="div-temp">
+        <label [ngClass]="{
+            'label-temp-color-cold': city.isCold(),
+            'label-temp-color-fine': city.isFine(),
+            'label-temp-color-hot': city.isHot()}"> {{city.temperature | number:'1.0-0'}}° </label>
+    </div>
+    
+    <div *ngIf="!showLoader && !showError" class="div-other-infos">
+        
+        <div class="div-infos-weather">
+            <div class="div-humidity">
+                <div>
+                    <label class="label-humidity">HUMIDITY</label>
+                </div>
+                <div>
+                    <label class="label-humidity-value">{{city.humidity}}%</label>
+                </div>
+            </div>
+            <div class="div-pressure">
+                <div>
+                    <label class="label-pressure">PRESSURE</label>
+                </div>
+                <div>
+                    <label class="label-pressure-value">{{city.pressure}}hPa</label>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="div-update">
+                <label class="label-update">Update at {{city.dateUpdate | date:'mediumTime' }}</label>
+        </div>
+    </div>
+<div>

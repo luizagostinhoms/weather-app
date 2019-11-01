@@ -1,0 +1,137 @@
+.square-weather{
+    width:252px;
+    font-family: Helvetica;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(51,51,51,0.10);
+    border-radius: 5px;
+}
+
+.divider-name{
+    border: 1px solid #ebebeb;    
+}
+
+.div-city-name {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 35px;
+}
+
+.label-city-name {
+    color: #737c84;
+    font-size: 19px;
+    align-content: center;  
+}
+
+.div-temp{
+    text-align: center;
+    font-size: 90px;
+    align-content: center; 
+    margin: 10%;
+}
+
+.label-temp-color-cold{
+    color: #69a3ff;
+}
+
+.label-temp-color-fine{
+    color: #ff9632;
+}
+
+.label-temp-color-hot{
+    color: #ed1946;
+}
+.label-temp-color-fine{
+    color: #ff9632;
+}
+.div-other-infos{
+    text-align: center;
+    background-color: #f1f1f1;
+    opacity: 50%;
+}
+
+.div-infos-weather{
+    text-align: center;
+    height: 50px;
+}
+
+.div-humidity{
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.div-pressure{
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.label-humidity{
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+.label-humidity-value{
+    color: #737c84;
+    font-size: 17px;
+    
+}
+
+.label-pressure{
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+.label-pressure-value{
+    color: #737c84;
+    font-size: 17px;
+}
+
+.div-update{
+    text-align: center;
+    height: 30px;
+    margin-top: 3%;
+ }
+
+.label-update{
+    color: #b4b4b4;
+    font-size: 11px;
+}
+
+.load-content {
+    text-align: center;
+    align-content: center; 
+    height: 120px;
+    margin: 10%;
+}
+.error-try-again {
+    text-align: center;
+    align-content: center; 
+    height: 120px;
+    margin: 10%;
+}
+.btn-try-again{
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: #737c84;
+    width: 100px;
+    height: 40px;
+    margin-left: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.label-message-error {
+    color: #ed1946;
+    font-size: 17px;
+}
+.label-try-again{
+    color: #737c84;
+    font-size: 17px;
+    cursor: pointer;
+}
+.div-message-error{
+    margin: 7%;
+}
